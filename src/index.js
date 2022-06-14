@@ -4,13 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
-import Navigation from "./component/routes/navigation-menu/navigation.component";
-import Food from "./component/routes/links/food.links";
-import Books from "./component/routes/links/books.links";
-import {CgArrowLongDown} from "react-icons/all";
-import Clothes from "./component/routes/links/clothes.links";
-import Gadget from "./component/routes/links/gadget.links";
-import Description from "./component/routes/description/description";
+import Description from "./component/description/description";
 import MainBox from "./component/Mainbox/mainbox.component";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -19,13 +13,8 @@ root.render(
       <BrowserRouter>
           <Routes>
               <Route path={'/'} element={<App/>}>
-                  <Route path={'food'} element={<Food/>}/>
-                  <Route path={'books'} element={<Books/>}/>
-                  <Route path={'clothes'} element={<Clothes/>}/>
-                  <Route path={'gadgets'} element={<Gadget/>}/>
-                  <Route index element={<Navigation/>}>
-
-                  </Route>
+                  <Route  index element={<MainBox/>}/>
+                  <Route path={'description'} element={<Description/>}/>
               </Route>
           </Routes>
       </BrowserRouter>

@@ -12,6 +12,12 @@
   margin-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px;
+  transition: 0.3s;
+
+
+  P{
+    font-family: 'Karla', sans-serif;
+  }
 
 
   .card-info-delete{
@@ -21,13 +27,29 @@
     width:inherit;
     max-width: inherit;
 
+    .numbering{
+      width:20px;
+      height: 20px;
+      background-color: #FBCB0A;
+      border-radius: 50%;
+      color: #f2f2f2;
+    }
+
     .icons{
       margin-left: 14px;
       color: #FBCB0A;
+      transition: 0.5s;
+      &:hover{
+        transform: scale(1.55);
+      }
     }
   }
   .description{
     text-align: start;
+    font-family: 'Karla', sans-serif;
   }
 
+}
+.fade-out{
+  opacity:0;
 }

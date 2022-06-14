@@ -8,6 +8,30 @@
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 10px;
+    max-width: inherit;
+    flex-wrap: wrap;
+
+    .s-n{
+    width: 20px;
+  }
+    .text-input-top{
+      border: none;
+      appearance: none;
+      background: #f2f2f2;
+      padding:12px;
+      border-radius: 3px;
+      width:100px;
+      outline: none;
+      margin-left: 20px;
+
+      &:focus::placeholder{
+        visibility: hidden;
+      }
+      &::placeholder{
+        color: #b7b7b7;
+        font-family: 'Karla', sans-serif;
+      }
+    }
 
 
   }

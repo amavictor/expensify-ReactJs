@@ -10,8 +10,9 @@ export default function Input ({submitFunction, handleChangeFunction}){
         <form onSubmit={submitFunction}>
             <div className={'form-div'}>
                 <div className={'flex-input'}>
-                    <input className={'text-input'} placeholder={'item'} onChange={handleChangeFunction} name= {'mainItem'} />
-                    <input className={'text-input'} placeholder={'price'} onChange={handleChangeFunction} name={'itemPrice'}/>
+                    <input className={'text-input-top s-n'} placeholder={'S/N'} onChange={handleChangeFunction} name={'id'} required={true}/>
+                    <input className={'text-input-top'} placeholder={'item'} onChange={handleChangeFunction} name= {'mainItem'} required={true} />
+                    <input className={'text-input-top s-n'} placeholder={'price'} onChange={handleChangeFunction} name={'itemPrice'} required={true}/>
                 </div>
                 <div className={'flex-input-2'}>
                     <textarea maxLength={'100'} className={'text-input'} placeholder={'description'} onChange={handleChangeFunction} name={'description'}/>
