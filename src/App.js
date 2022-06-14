@@ -1,11 +1,6 @@
 import Fruit from '../src/images/fruit.png'
 import './app.scss'
-import {createContext, useState} from "react";
-import Input from "./component/form/form.component";
-import Card from "./component/card-components/card.component";
-import Navigation from "./component/navigation-menu/navigation.component";
-import MainBox from "./component/Mainbox/mainbox.component";
-import {Link, Outlet} from "react-router-dom";
+import {Outlet} from "react-router-dom";
 
 function App() {
 

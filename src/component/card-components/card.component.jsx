@@ -43,8 +43,7 @@ export default function Card({shop,deleteItem,parentCallback,descriptionchecker,
                     <div className={'description'}>
                         <p onClick={()=>loadDescription(shop.id, (des)=> navigate('/description', { state: {
                             description1: des
-                            }}))}>
-                        }>{`${description}...`}</p>
+                            }}))}>{`${description}...`}</p>
                     </div>
                 </div>
 
