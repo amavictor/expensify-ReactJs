@@ -1,7 +1,6 @@
-import { Outlet, Link } from "react-router-dom";
-import {BsPhoneVibrateFill, GiClothes, ImBooks, MdFastfood} from "react-icons/all";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faBook,faBurger,faShirt,faLaptop} from "@fortawesome/free-solid-svg-icons";
 import './navigation.styles.scss'
-import {useEffect, useState} from "react";
 
 export default function Navigation ({item,filter,filtered,parentCallback}){
 
@@ -31,10 +30,10 @@ export default function Navigation ({item,filter,filtered,parentCallback}){
     }
     return(
         <div className={'navigation'}>
-                <MdFastfood className={'icons'} onClick={handleOnClick1}/>
-                <ImBooks className={'icons'} onClick={handleOnClick2} />
-                <GiClothes className={'icons'} onClick={handleOnClick3}/>
-                <BsPhoneVibrateFill className={'icons'} onClick={handleOnClick4}/>
+                <FontAwesomeIcon icon={faBurger} className={'icons'} onClick={handleOnClick1} />
+                <FontAwesomeIcon icon={faBook} className={'icons'} onClick={handleOnClick2}/>
+                <FontAwesomeIcon icon={faShirt}  className={'icons'} onClick={handleOnClick3}/>
+                <FontAwesomeIcon icon={faLaptop} className={'icons'} onClick={handleOnClick4} />
 
         </div>
 

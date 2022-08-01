@@ -1,6 +1,6 @@
 
 import './card.style.scss'
-import {AiFillCloseCircle, BsFillCheckCircleFill, BsFillTrashFill} from "react-icons/all";
+import {BsFillCheckCircleFill, BsFillTrashFill} from "react-icons/bs";
 import {Link, useNavigate} from "react-router-dom";
 import {Fragment, useEffect, useState} from "react";
 export default function Card({shop,deleteItem,parentCallback,descriptionchecker,sendToDescription,description1}){
