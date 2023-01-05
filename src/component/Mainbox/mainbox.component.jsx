@@ -4,7 +4,6 @@ import Navigation from "../navigation-menu/navigation.component";
 import './mainbox.scss'
 
 import React, {useEffect, useState} from "react";
-import Description from "../description/description";
 
 
 export default function MainBox (){
@@ -18,7 +17,6 @@ export default function MainBox (){
         completed: false
     })//input initial states
     const [filteredItems, setFilteredItems] = useState([])//new array to get item category
-    const [description1,setDescription1] = useState('')
     const [items, setItems] = useState( ()=> {
             const savedItems = localStorage.getItem('item')
             if (savedItems) {

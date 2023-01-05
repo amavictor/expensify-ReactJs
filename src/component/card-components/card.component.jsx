@@ -1,8 +1,7 @@
 
 import './card.style.scss'
 import {BsFillCheckCircleFill, BsFillTrashFill} from "react-icons/bs";
-import {Link, useNavigate} from "react-router-dom";
-import {Fragment, useEffect, useState} from "react";
+import {useNavigate} from "react-router-dom";
 export default function Card({shop,deleteItem,parentCallback,descriptionchecker,sendToDescription,description1}){
     let description = shop.description.slice(0,20)
     const navigate = useNavigate()
